@@ -3,7 +3,7 @@ import { SearchContext } from './Contexts/SearchContext';
 import Todo from './Todo';
 import ContextMenu from './Menu';
 import NewTodoForm from './NewTodoForm'
-import useStyles from './Styles/TodoList';
+import useStyles from './Styles/TodoListStyles';
 
 const TodoList = (props) => {
 

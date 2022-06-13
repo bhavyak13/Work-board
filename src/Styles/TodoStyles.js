@@ -8,18 +8,22 @@ const useStyles = makeStyles({
     },
     title: {
         fontWeight: '600',
-        marginBottom:'0.5rem',
+        marginBottom: '0.5rem',
     },
     box: {
         width: '90%',
         height: '6rem',
-        backgroundColor: 'pink',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        marginLeft:'1rem',
-        marginTop:'1rem',
+        marginLeft: '1rem',
+        marginTop: '1rem',
+        backgroundColor: (props => {
+            if (props.todo.status === 'Todos') return '#3a86ff'
+            else if (props.todo.status === 'Done') return 'green'
+            else return '#ff006e'
+        }),
         '&:hover': {
             opacity: [0.9, 0.8, 0.7],
         },

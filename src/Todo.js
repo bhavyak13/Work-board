@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 import TodoMenu from './TodoMenu';
 
 function Todo(props) {
-    const classes = useStyles();
+    const classes = useStyles(props);
     const { task, id, title } = props.todo;
     const dispatch = useContext(dispatchContext);
     const [contextMenu, setContextMenu] = useState(null);

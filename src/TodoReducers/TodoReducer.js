@@ -6,7 +6,7 @@ const TodoReducer = (todos, action) => {
                 id: uuid(),
                 task: action.task, title: action.title,
                 edit: false,
-                status: 'todoPane'
+                status: 'Todos'
             }]);
         case 'delete':
             return (todos.filter(todo => todo.id !== action.id));
