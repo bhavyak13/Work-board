@@ -1,5 +1,5 @@
 # Work-Board
-A work board is a software, which has tracks your work status. In
+A work board is a software, which has tracks for your work status. In
 general, there are three categories - Todo, In Progress, and Done.
 
 <img src="https://github.com/bhavyak13/work-board/blob/master/images/index.png"/>
