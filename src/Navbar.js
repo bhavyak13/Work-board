@@ -22,7 +22,7 @@ export default function Navbar() {
                         <MenuBookIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1,}}>
-                        Todos with hooks
+                        Work Board
                     </Typography>
                     <SearchBox/>
                 </Toolbar>
