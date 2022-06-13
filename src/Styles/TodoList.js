@@ -5,7 +5,7 @@ const useStyles = makeStyles({
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'column',
-        borderRight: props => ((props.status !== 'done') ? '2px solid black' : 'none'),
+        borderRight: props => ((props.status !== 'Done') ? '2px solid black' : 'none'),
         marginTop: '2rem',
         height: '50%',
         width: '100%'

@@ -2,19 +2,7 @@ import React, { useContext } from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { dispatchContext, TodosContext } from './Contexts/TodosContext';
-import { makeStyles } from '@mui/styles';
-const useStyles = makeStyles({
-    bttn: {
-        width: '100%',
-        border: "none",
-        backgroundColor: 'inherit',
-        '&:hover': {
-            // backgroundColor: 'rgba(0, 0, 0, 0.04)',
-            border: "none",
-            cursor: 'pointer'
-        }
-    }
-})
+import useStyles from './Styles/SendToMenuStyles';
 
 export default function SendToMenu(props) {
     const classes=useStyles();

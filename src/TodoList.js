@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { SearchContext } from './Contexts/SearchContext';
-
 import Todo from './Todo';
 import ContextMenu from './Menu';
 import NewTodoForm from './NewTodoForm'
@@ -15,12 +14,12 @@ const TodoList = (props) => {
 
     const { status } = props;
 
-    const { searchedTodos, value } = useContext(SearchContext);
+    const { searchedTodos } = useContext(SearchContext);
     const newTodos = searchedTodos.filter(todo => (todo.status === status));
 
     //for handling right click event, contextMenu is used!
     const rightClickHandler = (e) => {
-        if (status !== 'todoPane') return;
+        if (status !== 'Todos') return;
         e.preventDefault();
         setContextMenu(
             contextMenu === null

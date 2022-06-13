@@ -47,34 +47,3 @@ function Todo(props) {
     )
 }
 export default memo(Todo);
-// const deleteHandler = () => {
-//     dispatch({ type: 'delete', id })
-// }
-// const toggleHandler = () => {
-//     dispatch({ type: 'toggleCompletion', id });
-// }
-// const handleClickOpen = () => {
-//     dispatch({ type: 'toggleEditForm', id })
-// };
-
-
-{/* <FormGroup className={classes.task}>
-<FormControlLabel
-    label={`${task}`}
-    control={
-        <Checkbox
-            checked={completed}
-            onClick={toggleHandler}
-        />
-    }
-    className={completed ? classes.completed : ''}
-/> 
-</FormGroup> */}
-
-{/* <div className={classes.btns}>
-<DeleteIcon className={classes.btn} onClick={deleteHandler} />
-<div onClick={handleClickOpen} >
-    <EditIcon />
-</div>
-</div> */}
-{/* <EditFormDialog todo={todo} /> */ }

@@ -1,12 +1,12 @@
 import React, { useContext, useState } from 'react';
 import useStyles from './Styles/NewTodoStyles';
-import { dispatchContext } from './Contexts/TodosContext';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
+import { dispatchContext } from './Contexts/TodosContext';
 import { DialogContentText } from '@mui/material';
 
 export default function NewTodoForm(props) {

@@ -21,7 +21,6 @@ const useStyles = makeStyles({
         marginLeft:'1rem',
         marginTop:'1rem',
         '&:hover': {
-            // backgroundColor: 'pink',
             opacity: [0.9, 0.8, 0.7],
         },
     }

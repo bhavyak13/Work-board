@@ -8,14 +8,13 @@ const dispatchContext = createContext();
 
 
 const TodosProvider = (props) => {
-    const status = ['todoPane', 'inProgress', 'done'];
+    const status = ['Todos', 'In Progress', 'Done'];
     const initialTodos = [
-        { id: '1', title: 'task1', task: 'get some water to plants', edit: false, status: 'todoPane' },
-        { id: '2', title: 'title', task: 'Go to temple', edit: false, status: 'inProgress' },
-        { id: '3', title: 'this is title', task: 'swimming', edit: false, status: 'done' },
+        { id: '1', title: 'task1', task: 'get some water to plants', edit: false, status: 'Todos' },
+        { id: '2', title: 'title', task: 'Go to temple', edit: false, status: 'In Progress' },
+        { id: '3', title: 'this is title', task: 'swimming', edit: false, status: 'Done' },
     ]
     const [todos, dispatch] = useLocalStorageReducer(TodoReducer, initialTodos, 'todos');
-
 
     return (
         <TodosContext.Provider value={{ todos, status }}>
