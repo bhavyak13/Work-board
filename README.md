@@ -49,3 +49,11 @@ Right-click on any of the Sticky notes, and there will be an option for Send To.
 <br/>this will open the 2nd level of menu options - with the panes to send the sticky note to, as discussed above.
 
 <img src="https://github.com/bhavyak13/work-board/blob/master/images/sendToMenu.png"/>
+
+# Run locally
+To run the project on your computer:
+1. Download code 
+2. Open cmd and run command `npm install` or simply, `npm i` in the same directory you have extracted code from zip file.
+3. Now run command <b>npm start</b>
+<br/>It runs the application in the development mode
+ 
