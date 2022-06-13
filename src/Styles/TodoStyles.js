@@ -1,32 +1,29 @@
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
-    Paper: {
-        width: '33%',
-        margin: 'auto',
-        padding: '1rem 2rem',
-        marginTop: '1rem',
+    todo: {
+        width: '50%',
+        //100 if length%2===1
+        textAlign: "center"
+    },
+    title: {
+        fontWeight: '600',
+        marginBottom:'0.5rem',
+    },
+    box: {
+        width: '90%',
+        height: '6rem',
+        backgroundColor: 'pink',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        '@media (max-width: 600px)': {
-            width: '80%',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        marginLeft:'1rem',
+        marginTop:'1rem',
+        '&:hover': {
+            // backgroundColor: 'pink',
+            opacity: [0.9, 0.8, 0.7],
         },
-    },
-    task: {
-    },
-    btns: {
-        display: 'flex',
-        justifyContent: 'space-between',
-    },
-    btn: {
-        marginRight: '1rem',
-        '@media (max-width: 600px)': {
-            marginRight: '0.5rem',
-        },
-    },
-    completed: {
-        textDecoration: 'line-through'
     }
 })
 export default useStyles;

@@ -1,6 +1,6 @@
 import { useReducer, useEffect } from "react"
 
-const useLocalStorageReducer = (reducer,defaultValue,key) => {
+const useLocalStorageReducer = (reducer, defaultValue, key) => {
     const [state, dispatch] = useReducer(reducer, defaultValue, () => {
         let value;
         try {
@@ -10,10 +10,11 @@ const useLocalStorageReducer = (reducer,defaultValue,key) => {
             value = defaultValue;
         }
         return value;
+        // return defaultValue;
     })
     useEffect(() => {
         window.localStorage.setItem(key, JSON.stringify(state))
-    }, [state])
+    }, [state, key])
     return [state, dispatch];
 }
 export default useLocalStorageReducer;

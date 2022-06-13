@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 // import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import SearchBox from './SearchBox';
 
 export default function Navbar() {
     return (
@@ -24,7 +25,7 @@ export default function Navbar() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1,}}>
                         Todos with hooks
                     </Typography>
-                    {/* <Button color="inherit">Login</Button> */}
+                    <SearchBox/>
                 </Toolbar>
             </AppBar>
         </Box>

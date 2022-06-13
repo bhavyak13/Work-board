@@ -1,12 +1,13 @@
 import React from 'react'
-// import Counter from './ReducerBasicExamples/Counter';
+import { TodosProvider } from './Contexts/TodosContext';
 import TodoApp from './TodoApp';
 
 function App() {
   return (
-    <div >
-      <TodoApp />
-      {/* <Counter/> */}
+    <div style={{height:'100vh'}}>
+      <TodosProvider>
+        <TodoApp />
+      </TodosProvider>
     </div>
   );
 }

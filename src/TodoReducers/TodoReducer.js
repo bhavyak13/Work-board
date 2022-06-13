@@ -2,16 +2,22 @@ import { v4 as uuid } from 'uuid';
 const TodoReducer = (todos, action) => {
     switch (action.type) {
         case 'add':
-            return ([...todos, { task: action.task, id: uuid(), completed: false, edit: false }]);
+            return ([...todos, {
+                id: uuid(),
+                task: action.task, title: action.title,
+                edit: false,
+                status: 'todoPane'
+            }]);
         case 'delete':
             return (todos.filter(todo => todo.id !== action.id));
-        case 'toggleCompletion':
+        case 'statusChange':
+            console.log(action);
             return (todos.map(todo => {
                 if (todo.id === action.id) {
-                    return { ...todo, completed: !(todo.completed) }
+                    return { ...todo, status: action.status };
                 }
                 return todo;
-            }));
+            }))
         case 'saveEditedTodo':
             return (todos.map(todo => {
                 if (todo.id === action.newTodo.id) {
